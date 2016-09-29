@@ -32,7 +32,7 @@ function main() {
 main();
 
 function setPolicyNum() {
-    policyNum = PROMPT.question('Please enter the number of your insurance policy.\n>');
+    policyNum = Math.floor((Math.random() * 1000) + 1);
 }
 
 function setLastName() {
