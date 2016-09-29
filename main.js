@@ -24,6 +24,7 @@ function main() {
         setMonthlyInsurancePremium();
         printClosingRemark();
         setContinueInt();
+        return main();
     }
     printGoodbye();
 }
@@ -86,7 +87,6 @@ function printClosingRemark() {
 function setContinueInt() {
     continueInt = PROMPT.question('Please enter a \'1\' if you want to continue using this program.\n' +
         'If not, enter anything else.\n>');
-    return main();
 }
 
 function printGoodbye() {
